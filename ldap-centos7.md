@@ -112,19 +112,15 @@ O nss-pam-ldapd utiliza uma daemon na procura de entradas do diretório, defina 
 # systemctl enable nslcd
 ```
 
-## 4. Crie um diretório inicial
+### 4. Arquivo **/etc/pam.d/login**
 
-```text
-# mkdir /home/rafael
-```
+Adicione a seguinte linha no arquivo:
 
-## 5. Resolvendo os UIDs e GIDs 
+```yaml
+$ sudo /etc/pam.d/login
+--------------------------------
 
-Altere o dono do  arquivo e as permissões de acesso.
-
-```text
-# chown 10002:10002 /home/rafael
-# chmod 700 /home/rafael
+session optional pam_mkhomedir.so skel=/etc/skel umask=0022
 ```
 
 ## 6. Ativar o LDAP
@@ -144,7 +140,7 @@ Execute o comando para fazer as alterações necessárias para ativer o LDAP.
 
 ## 8. Ajustando o arquivo /etc/skel
 
-É o diretório que contém os modelos de arquivo .bash\_profile e bashrc, esses arquivos são copiados para o diretório pessoal dos usuários \(/home\) ao serem criados, não sendo necessário realizar a configuração destes arquivos separadamente para cada usuário. 
+É o diretório que contém os modelos de arquivo .bash\_profile e bashrc, esses arquivos são copiados para o diretório pessoal dos usuários \(/home\) ao serem criados, não sendo necessário realizar a configuração destes arquivos separadamente para cada usuário.
 
 Execute o comando para copiar esses arquivos para o /home do usuário criado.
 
@@ -161,8 +157,10 @@ getent passwd
 ```
 
 ## Referências
-<a href="https://www.server-world.info/en/note?os=CentOS_7&p=openldap&f=8">https://www.server-world.info/en/note?os=CentOS_7&p=openldap&f=8</a>
 
-<a href="https://stato.blog.br/wordpress/ldap-parte-2-autenticando-usuarios-ldap-no-linux/">https://stato.blog.br/wordpress/ldap-parte-2-autenticando-usuarios-ldap-no-linux/</a>
+[https://www.server-world.info/en/note?os=CentOS\_7&p=openldap&f=8](https://www.server-world.info/en/note?os=CentOS_7&p=openldap&f=8)
 
-<a href="https://www.lisenet.com/2016/setup-ldap-authentication-on-centos-7/">https://www.lisenet.com/2016/setup-ldap-authentication-on-centos-7/</a> 
+[https://stato.blog.br/wordpress/ldap-parte-2-autenticando-usuarios-ldap-no-linux/](https://stato.blog.br/wordpress/ldap-parte-2-autenticando-usuarios-ldap-no-linux/)
+
+[https://www.lisenet.com/2016/setup-ldap-authentication-on-centos-7/](https://www.lisenet.com/2016/setup-ldap-authentication-on-centos-7/)
+

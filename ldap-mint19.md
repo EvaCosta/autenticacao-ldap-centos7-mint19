@@ -6,7 +6,7 @@
 $ sudo apt-get install libnss-ldap libpam-ldap slapd ldap-utils nscd
 ```
 
-Caso prefira configurar a diretamente a partir dos arquivos basta apertar ESC até fecharem todas as janelas de configuração. ****
+Caso prefira configurar a diretamente a partir dos arquivos basta apertar ESC até fecharem todas as janelas de configuração. _\*\*_
 
 Caso opte pela configuração via interface a ordem está definida no tópico 2 do guia.
 
@@ -24,7 +24,7 @@ Caso opte pela configuração via interface a ordem está definida no tópico 2 
 ```yaml
 $sudo vim /etc/ldap.conf
 --------------------------------
-                                                                                                                           
+
 ###DEBCONF###
 ##
 ## Configuration of this file will be managed by debconf as long as the
@@ -76,7 +76,6 @@ bindpw <senha> <--- (5)
 # if the effective user ID is root. Password is
 # stored in /etc/ldap.secret (mode 600)
 rootbinddn cn=admin,dc=user,dc=labredes,dc=info (6)
-
 ```
 
 ## 3. Altere o arquivo /etc/nsswitch.conf
@@ -238,7 +237,7 @@ samuel:x:10004:10004:Samuel Martins:/home/samuel:/bin/bash
 
 Um arquivo de exemplo com toda as configurações possíveis está disponível em **/usr/share/doc/lightdm/lightdm.conf.gz**
 
-Vamos criar um arquivo **/etc/lightdm/lightdm.conf.d /70-myconfig.conf.** 
+Vamos criar um arquivo **/etc/lightdm/lightdm.conf.d /70-myconfig.conf.**
 
 Esse arquivo deverá ficar da seguinte forma:
 
@@ -265,10 +264,11 @@ Abra o terminal \(Ctrl + Alt + T \)e digite o comando pwd caso esteja tudo corre
 
 ## Referências
 
-<a href="https://www.unixmen.com/configure-linux-clients-authenticate-using-openldap/">https://www.unixmen.com/configure-linux-clients-authenticate-using-openldap/</a>
+[https://www.unixmen.com/configure-linux-clients-authenticate-using-openldap/](https://www.unixmen.com/configure-linux-clients-authenticate-using-openldap/)
 
-<a href="https://www.vivaolinux.com.br/artigo/Cliente-Linux-no-servidor-LDAP?pagina=3">https://www.vivaolinux.com.br/artigo/Cliente-Linux-no-servidor-LDAP?pagina=3</a>
+[https://www.vivaolinux.com.br/artigo/Cliente-Linux-no-servidor-LDAP?pagina=3](https://www.vivaolinux.com.br/artigo/Cliente-Linux-no-servidor-LDAP?pagina=3)
 
-<a href="https://wiki.ubuntu.com/LightDM">https://wiki.ubuntu.com/LightDM</a>
+[https://wiki.ubuntu.com/LightDM](https://wiki.ubuntu.com/LightDM)
 
-<a href="https://stackoverflow.com/questions/14983807/ldap-login-works-via-terminal-but-doesnt-work-via-gui">https://stackoverflow.com/questions/14983807/ldap-login-works-via-terminal-but-doesnt-work-via-gui<a>
+[https://stackoverflow.com/questions/14983807/ldap-login-works-via-terminal-but-doesnt-work-via-gui](https://stackoverflow.com/questions/14983807/ldap-login-works-via-terminal-but-doesnt-work-via-gui)
+

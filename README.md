@@ -1,2 +1,4 @@
-# Autenticação Usuários LDAP no CentOS 7 e Linux MInt 19.2 
-<p>Trabalho desenvolvido no curso de <b>Tecnologia em Sistemas para Internet</b> pertencente ao <b>IF Sudeste MG Barbacena</b> na disciplina de <b>Gerência e Configuração de Serviços Internet </b> ministrada pelo professor <b>Herlon Ayres Camargo</b> em 2019.</p> 
+# Introduction
+
+Trabalho desenvolvido no curso de **Tecnologia em Sistemas para Internet** pertencente ao **IF Sudeste MG Barbacena** na disciplina de **Gerência e Configuração de Serviços Internet** ministrada pelo professor **Herlon Ayres Camargo** em 2019.
+
