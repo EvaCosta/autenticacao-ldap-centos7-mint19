@@ -161,12 +161,8 @@ getent passwd
 ```
 
 ## Referências
+<a href="https://www.server-world.info/en/note?os=CentOS_7&p=openldap&f=8">https://www.server-world.info/en/note?os=CentOS_7&p=openldap&f=8</a>
 
-{% embed url="https://www.server-world.info/en/note?os=CentOS\_7&p=openldap&f=8" %}
+<a href="https://stato.blog.br/wordpress/ldap-parte-2-autenticando-usuarios-ldap-no-linux/">https://stato.blog.br/wordpress/ldap-parte-2-autenticando-usuarios-ldap-no-linux/</a>
 
-{% embed url="https://stato.blog.br/wordpress/ldap-parte-2-autenticando-usuarios-ldap-no-linux/" %}
-
-{% embed url="https://www.lisenet.com/2016/setup-ldap-authentication-on-centos-7/" %}
-
-
-
+<a href="https://www.lisenet.com/2016/setup-ldap-authentication-on-centos-7/">https://www.lisenet.com/2016/setup-ldap-authentication-on-centos-7/</a> 
