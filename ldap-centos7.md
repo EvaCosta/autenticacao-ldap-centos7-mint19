@@ -33,9 +33,10 @@ O nss-pam-ldapd utiliza o mesmo arquivo para os módulos NSS e PAM. É necessár
 6. Limite de tempo de conexão.
 7. Limite de tempo de resposta.
 
-**\# vim /etc/nslcd.conf**
-
 ```yaml
+vim /etc/nslcd.conf
+---------------------------------
+
 # This is the configuration file for the LDAP nameservice
 # switch library's nslcd daemon. It configures the mapping
 # between NSS names (see /etc/nsswitch.conf) and LDAP
@@ -112,7 +113,7 @@ O nss-pam-ldapd utiliza uma daemon na procura de entradas do diretório, defina 
 # systemctl enable nslcd
 ```
 
-### 4. Arquivo **/etc/pam.d/login**
+## 4. Arquivo **/etc/pam.d/login**
 
 Adicione a seguinte linha no arquivo:
 
@@ -123,7 +124,7 @@ $ sudo /etc/pam.d/login
 session optional pam_mkhomedir.so skel=/etc/skel umask=0022
 ```
 
-## 6. Ativar o LDAP
+## 5. Ativar o LDAP
 
 Execute o comando para fazer as alterações necessárias para ativer o LDAP.
 
@@ -131,24 +132,14 @@ Execute o comando para fazer as alterações necessárias para ativer o LDAP.
 # authconfig --updateall --enableldap --enableldapauth
 ```
 
-## 7. Reinicie o nscd
+## 6. Reinicie o nscd
 
 ```text
 # systemctl restart nscd
 # systemctl enable nscd
 ```
 
-## 8. Ajustando o arquivo /etc/skel
-
-É o diretório que contém os modelos de arquivo .bash\_profile e bashrc, esses arquivos são copiados para o diretório pessoal dos usuários \(/home\) ao serem criados, não sendo necessário realizar a configuração destes arquivos separadamente para cada usuário.
-
-Execute o comando para copiar esses arquivos para o /home do usuário criado.
-
-```text
-# cp /etc/skel/.bash* /home/rafael
-```
-
-## 9. Testando a autenticação
+## 7. Testando a autenticação
 
 Deve retornar todos os usuários inclusive os pertencentes a base ldap:
 
