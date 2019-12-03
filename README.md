@@ -1,0 +1,1 @@
+# autenticacao-ldap-centos7-mint19
