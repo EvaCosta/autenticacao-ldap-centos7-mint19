@@ -265,15 +265,10 @@ Abra o terminal \(Ctrl + Alt + T \)e digite o comando pwd caso esteja tudo corre
 
 ## Referências
 
-{% embed url="https://www.unixmen.com/configure-linux-clients-authenticate-using-openldap/" %}
+<a href="https://www.unixmen.com/configure-linux-clients-authenticate-using-openldap/">https://www.unixmen.com/configure-linux-clients-authenticate-using-openldap/</a>
 
+<a href="https://www.vivaolinux.com.br/artigo/Cliente-Linux-no-servidor-LDAP?pagina=3">https://www.vivaolinux.com.br/artigo/Cliente-Linux-no-servidor-LDAP?pagina=3</a>
 
+<a href="https://wiki.ubuntu.com/LightDM">https://wiki.ubuntu.com/LightDM</a>
 
-{% embed url="https://www.vivaolinux.com.br/artigo/Cliente-Linux-no-servidor-LDAP?pagina=3" %}
-
-
-
-{% embed url="https://wiki.ubuntu.com/LightDM" %}
-
-{% embed url="https://stackoverflow.com/questions/14983807/ldap-login-works-via-terminal-but-doesnt-work-via-gui" %}
-
+<a href="https://stackoverflow.com/questions/14983807/ldap-login-works-via-terminal-but-doesnt-work-via-gui">https://stackoverflow.com/questions/14983807/ldap-login-works-via-terminal-but-doesnt-work-via-gui<a>
